@@ -5,7 +5,8 @@ Code, datasets for the paper ```Can LLMs Evaluate Complex Attribution in QA? Aut
 ```docker pull huggingface/transformers-pytorch-gpu:4.35.2```
 
 ## Dataset
-All datasets are in the dataset folder, including CAQA_train.csv, CAQA_dev.csv and ALCE_finegrained.csv.
+Download the data, including CAQA_train.csv, CAQA_dev.csv and ALCE_finegrained.csv,  from `https://drive.google.com/file/d/12o3bUJw-W9IW-pDT8KZUHxmusssFKg4t/view?usp=drive_link`
+Unzip this file and put it in folder ```data```
 
 ### Fine-tuning LLMs
 Run ```sh train.sh```
