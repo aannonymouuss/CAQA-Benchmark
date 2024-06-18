@@ -1,5 +1,5 @@
 # CAQA Benchmark
-Code, datasets for the paper Can LLMs Evaluate Complex Attribution in QA? Automatic Benchmarking Using Knowledge Graphs
+Code, datasets for the paper ```Can LLMs Evaluate Complex Attribution in QA? Automatic Benchmarking Using Knowledge Graphs```
 
 ## Evironment
 Docker pull huggingface/transformers-pytorch-gpu:4.35.2
