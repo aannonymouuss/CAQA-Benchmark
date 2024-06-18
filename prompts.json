@@ -1,0 +1,52 @@
+[
+  {
+    "task_name": "attribution-no-definition",
+    "prompt_template": "Verify whether a given reference can support the claim. Options: Support, Missing, Contradictory or Irrelevant.",
+    "input_template": "Claim: {}\n\nReference: {}\n",
+    "label_map": {
+      "Support": "Support",
+      "Missing": "Missing",
+      "Contradictory": "Contradictory",
+      "Irrelevant": "Irrelevant"
+    }
+  },
+  {
+    "task_name": "attribution-no-definition-w-examples",
+    "prompt_template": "Verify whether a given reference can support the claim. Options: Support, Missing, Contradictory or Irrelevant. \n\n\n Examples: \n\n\n Example1: \n Input:\nClaim: what places are in the west midlands Dudley, Wednesfield, and Aldridge are the places in the West Midlands.\n\nReference: \nDudley is located in the West Midlands.\nWednesfield is located in the West Midlands.\nAldridge is located in the West Midlands.\n\n\n### Response: Support\n\n\n Example2: \n Input:\nClaim: the lyrics to beauty and the beast were written by who? Alan Menken wrote the lyrics to Beauty and the Beast.\n\nReference: Alan Menken is a music songwriter.\n\n\n### Response: Missing\n\n\n Example3: \n Input:\nClaim: what team does colin kaepernick play for Colin Kaepernick plays for the San Francisco 49ers.\n\nReference: Colin Kaepernick played for the Knicks de New York.\n\n\n### Response: Contradictory\n\n\n Example4: \n Input:\nClaim: which measurement system's absorbed dose rate unit is gray per second? The absorbed dose rate unit of gray per second belongs to the International System of Units.\n\nReference: The absorbed dose rate is measured in Gray per second and is a type of measurement unit dimension.\n\n\n### Response: Irrelevant",
+    "input_template": "Claim: {}\n\nReference: {}\n",
+    "label_map": {
+      "Support": "Support",
+      "Missing": "Missing",
+      "Contradictory": "Contradictory",
+      "Irrelevant": "Irrelevant"
+    }
+  },
+  {
+    "task_name": "attribution2category-no-definition",
+    "prompt_template": "Verify whether a given reference can support the claim. Options: Supportive, Unsupported",
+    "input_template": "Claim: {}\n\nReference: {}\n",
+    "label_map": {
+      "Supportive": "Supportive",
+      "Unsupported": "Unsupported"
+    }
+  },
+  {
+    "task_name": "ALCE",
+    "prompt_template": "",
+    "input_template": "premise: {} hypothesis: {}",
+    "label_map": {
+      "1": "Support",
+      "0": "Irrelevant"
+    }
+  },
+  {
+    "task_name": "AttScore",
+    "prompt_template": "Verify whether a given reference can support the claim. Options: Attributable, Extrapolatory or Contradictory.",
+    "input_template": "Claim: {}\n\nReference: {}\n",
+    "label_map": {
+      "Attributable": "Support",
+      "Extrapolatory": "Irrelevant",
+      "Contradictory": "Contradictory"
+    }
+  }
+]

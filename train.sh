@@ -1,0 +1,26 @@
+torchrun --nproc_per_node 2 train.py \
+  --model_name_or_path path_to_your_model \
+  --data_path path_to_the_train_dataset \
+  --train_subset dataset_file_name \
+  --input_has_query True \
+  --num_train_samples -1 \
+  --bf16 True \
+  --output_dir path_to_model_save \
+  --evaluation_strategy steps \
+  --eval_steps 20000 \
+  --num_train_epochs 1 \
+  --model_max_length 512 \
+  --per_device_train_batch_size 2 \
+  --per_device_eval_batch_size 2 \
+  --gradient_accumulation_steps 8 \
+  --save_strategy steps \
+  --save_steps 10000 \
+  --save_total_limit 1 \
+  --learning_rate 2e-5 \
+  --weight_decay 0. \
+  --warmup_ratio 0.03 \
+  --lr_scheduler_type cosine \
+  --logging_steps 1 \
+  --fsdp 'full_shard auto_wrap' \
+  --fsdp_transformer_layer_cls_to_wrap 'LlamaDecoderLayer' \
+  --tf32
