@@ -2,7 +2,7 @@
 Code, datasets for the paper ```Can LLMs Evaluate Complex Attribution in QA? Automatic Benchmarking Using Knowledge Graphs```
 
 ## Evironment
-Docker pull huggingface/transformers-pytorch-gpu:4.35.2
+```docker pull huggingface/transformers-pytorch-gpu:4.35.2```
 
 ## Dataset
 All datasets are in the dataset folder, including CAQA_train.csv, CAQA_dev.csv and ALCE_finegrained.csv.
