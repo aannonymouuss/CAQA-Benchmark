@@ -10,14 +10,17 @@ Unzip this file and put it in folder ```data```
 
 ## Experiments
 ### Fine-tuning LLMs
-Run ```sh train.sh```
-Before that, you need to download corresponding open-source LLMs, and modify the ```path_to_your_model``` in ```inferce.sh```.
+Run ```sh train.sh``` to fine-tune LLMs.
+
+Before that, you need to download corresponding open-source LLMs, and modify the ```path_to_your_model``` in ```train.sh```.
 
 Evaluate the fine-tuned LLM by running ```sh inferce.sh```
 
 ### Zero/Few-shot LLMs
-You can run ```sh inferce.sh``` to directly evaluate open-source LLMs. 
+You can run ```sh inferce.sh``` to directly evaluate open-source LLMs or the fine-tuned LLMs. 
+
 Before that, you need to download corresponding open-source LLMs, and modify the ```path_to_your_model``` in ```inferce.sh```.
+
 Modify the ```prompt_type``` parameter in ```inferce.sh``` to select zero-shot or few-shot settings.
 
 Also, you can run ```sh run_chatgpt.sh``` to select ChatGPT-3.5 or ChatGPT-4 as the attribution evaluator. The parameter ```-fs (True or False)``` is used to control the use of zero-shot or few-shot settings.
