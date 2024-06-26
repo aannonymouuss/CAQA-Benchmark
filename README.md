@@ -23,7 +23,7 @@ Before that, you need to download corresponding open-source LLMs, and modify the
 
 Modify the ```prompt_type``` parameter in ```inferce.sh``` to select zero-shot or few-shot settings.
 
-Also, you can run ```sh run_chatgpt.sh``` to select ChatGPT-3.5 or ChatGPT-4 as the attribution evaluator. The parameter ```-fs (True or False)``` is used to control the use of zero-shot or few-shot settings.
+Also, you can run ```sh run_chatgpt.sh``` to select ChatGPT-3.5 or ChatGPT-4 as the attribution evaluator (You have to apply for the API-key first). The parameter ```-fs (True or False)``` is used to control the use of zero-shot or few-shot settings.
 
 ## Issues
 If you have any questions, please leave a issue and we will respond soon.
