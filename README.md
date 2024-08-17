@@ -8,6 +8,8 @@ Code, datasets for the paper ```Can LLMs Evaluate Complex Attribution in QA? Aut
 Download the data, including CAQA_train.csv, CAQA_dev.csv and ALCE_finegrained.csv,  from `https://drive.google.com/file/d/12o3bUJw-W9IW-pDT8KZUHxmusssFKg4t/view?usp=drive_link`
 Unzip this file and put it in folder ```data```
 
+We also provide a scholarly domain attributed QA benchmark, `https://drive.google.com/file/d/1aSk52cTfvEmjns9UH_ErnH4M_ha86Zrh/view?usp=drive_link`
+
 ## Experiments
 ### Fine-tuning LLMs
 Run ```sh train.sh``` to fine-tune LLMs.
