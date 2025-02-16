@@ -1,8 +1,6 @@
 # CAQA Benchmark
 Code, datasets for the paper ```Can LLMs Evaluate Complex Attribution in QA? Automatic Benchmarking Using Knowledge Graphs```
 
-### News: Adding a scholarly domain attributed QA benchmark
-
 ## Evironment
 ```docker pull huggingface/transformers-pytorch-gpu:4.35.2```
 
@@ -29,5 +27,3 @@ Modify the ```prompt_type``` parameter in ```inferce.sh``` to select zero-shot o
 
 Also, you can run ```sh run_chatgpt.sh``` to select ChatGPT-3.5 or ChatGPT-4 as the attribution evaluator (You have to apply for the API-key first). The parameter ```-fs (True or False)``` is used to control the use of zero-shot or few-shot settings.
 
-## Issues
-If you have any questions, please leave a issue and we will respond soon.
